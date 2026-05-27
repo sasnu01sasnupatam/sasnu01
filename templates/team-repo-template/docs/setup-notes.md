@@ -5,7 +5,7 @@
 
 > บันทึกการ setup hardware + software ของทีม
 
-จดเฉพาะสิ่งที่ทีมใช้จริง จะช่วยให้ย้อนกลับมาแก้ setup หรืออธิบายงานตอน demo ได้ง่ายขึ้น
+จดเฉพาะสิ่งที่ทีมใช้จริง จะช่วยให้ย้อนกลับมาแก้ setup หรืออธิบายงานตอนสรุปผลได้ง่ายขึ้น
 
 ---
 
@@ -38,7 +38,7 @@ UNO Q ─Qwiic─→ Movement ─Qwiic─→ Pixels ─Qwiic─→ Buzzer
 ใส่ภาพไว้ที่ `assets/workspace.jpg` แล้วเปิดบรรทัดด้านล่างเมื่อมีรูปจริง:
 
 ```md
-! [Workspace] (../assets/workspace.jpg)
+![Workspace](../assets/workspace.jpg)
 ```
 
 ## Software ที่ติดตั้ง

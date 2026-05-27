@@ -1,10 +1,10 @@
 <!-- workshop-header -->
 <img width="1347" height="127" alt="Coding Thailand 2026 header" src="https://github.com/user-attachments/assets/ba5cf267-f460-4fb0-b69b-c461ae061a3b" />
 
-# 📝 Worksheet W4 — Idea Canvas for Day 2
+# 📝 Worksheet W4 — Idea Canvas สำหรับรอบต่อยอด
 
 > **ทำในช่วง 16:00-16:30**
-> เปลี่ยนสิ่งที่ทีมทำได้ใน Day 1 ให้เป็นแผน prototype ที่อธิบายและ demo ต่อได้ใน Day 2/3
+> เปลี่ยนสิ่งที่ทีมทำได้ในรอบแรก ให้เป็นแผน prototype ที่อธิบายและต่อยอดได้ต่อ
 
 ---
 
@@ -73,7 +73,7 @@
 ### b) AI Model
 - Track: _________________
 - Classes: _________________
-- จะ improve จาก V2 ของ Day 1 อย่างไร?
+- จะ improve จาก V2 ตอนนี้อย่างไร?
   ```
   [เขียน]
   ```
@@ -86,9 +86,9 @@
 
 ---
 
-## 🎬 4. Demo Scenario
+## 🎬 4. Scenario ตอนโชว์การทำงาน
 
-ใน Day 3 Pitching จะ demo อย่างไร? ใน 2 นาที?
+ถ้าต้องโชว์การทำงานภายใน 2 นาที จะเรียงขั้นตอนอย่างไร?
 
 | ขั้นตอน | ทำอะไร | เวลา |
 |---|---|---|
@@ -116,12 +116,12 @@
 
 ## 📊 6. Success Metrics
 
-ใน Day 3 ทีมจะถือว่า prototype สำเร็จเมื่อ:
+ในรอบสรุปงาน ทีมจะถือว่า prototype สำเร็จเมื่อ:
 
 - [ ] ✅ Functionality: ________________________
 - [ ] ✅ Accuracy: ______% ขึ้นไป
 - [ ] ✅ Response time: ภายใน ____ms
-- [ ] ✅ Demo จริงทำงานได้ในห้อง
+- [ ] ✅ ทดสอบจริงในห้องแล้วทำงานได้
 - [ ] ✅ User เข้าใจในการดูครั้งแรก
 
 ---
@@ -139,16 +139,15 @@
 ตัวอย่าง:
 | ความเสี่ยง | ผลกระทบ | วิธีแก้ |
 |---|---|---|
-| Model accuracy drop ในสภาพแสงต่ำ | ใช้จริงไม่ได้ | เก็บข้อมูล low-light เพิ่ม Day 2 morning |
+| Model accuracy drop ในสภาพแสงต่ำ | ใช้จริงไม่ได้ | เก็บข้อมูล low-light เพิ่มในรอบถัดไป |
 | Servo ไม่ทำงานบน UNO Q | ไม่มี output | เตรียม Pixels เป็น backup |
 
----
 
-## 👥 8. Team Role Assignment (Day 2)
+## 👥 8. Team Role Assignment (รอบถัดไป)
 
-ใน Day 2 แต่ละคนรับผิดชอบอะไร?
+ในรอบถัดไปแต่ละคนรับผิดชอบอะไร?
 
-| ชื่อ | บทบาท 3H | งานหลัก Day 2 |
+| ชื่อ | บทบาท 3H | งานหลักรอบถัดไป |
 |---|---|---|
 | | Hacker | Train V3 + Code integration |
 | | Hipster | Form factor + UI/Output design |
@@ -170,16 +169,16 @@
 
 ```bash
 git add worksheets/W4-idea-canvas.md
-git commit -m "docs: เพิ่ม Idea Canvas สำหรับ Day 2 — [ชื่อ prototype]"
+git commit -m "docs: เพิ่ม Idea Canvas สำหรับรอบต่อยอด — [ชื่อ prototype]"
 git push
 ```
 
 ---
 
-## 💡 Tips สำหรับ Day 2/3
+## 💡 Tips สำหรับช่วงต่อยอด
 
-1. **Pitch Day 3 = ทีมต้องอธิบายเอง** — เริ่มซ้อมตั้งแต่ Day 2 ว่าใครจะพูดส่วนไหน
-2. **Demo Day 3 = ต้อง live** — เตรียม backup ในกรณี internet/hardware พัง
+1. **ถ้าต้องอธิบายงาน 2 นาที ทีมควรแบ่งช่วงพูดกันล่วงหน้า**
+2. **ถ้าต้องโชว์สด ควรมีแผนสำรองเมื่อ internet หรือ hardware มีปัญหา**
 3. **Document ทุก iteration** ใน GitHub — commit ทุก hour
 4. **Token = constraint ที่สอนการตัดสินใจ** — เลือกสิ่งจำเป็น
 5. **ไอเดียดี + execute ไม่จบ < ไอเดียเรียบง่าย + execute เสร็จ**

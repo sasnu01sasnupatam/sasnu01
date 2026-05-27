@@ -3,7 +3,7 @@
 
 # 📅 Day 1 Schedule — Edge AI Workshop (6 ชั่วโมง)
 
-> **เป้าหมาย:** ทุกทีมจบวันด้วย Model V2 + Prediction Log + Idea Canvas พร้อมไป Prototype Day
+> **เป้าหมาย:** ทุกทีมจบวันด้วย Model V2 + Prediction Log + Idea Canvas พร้อมต่อยอดในรอบถัดไป
 
 ---
 
@@ -44,7 +44,7 @@
 2. เห็นตัวอย่าง prototype ที่จบ flow ได้จริง
 3. รู้ว่าตลอดวันทีมต้องเก็บหลักฐานอะไรไว้ใน GitHub repo
 
-สิ่งที่ควรจับตาระหว่างดู demo:
+สิ่งที่ควรสังเกตจากตัวอย่างเปิด:
 - เขาเก็บข้อมูลแบบไหน
 - เขาดูผล train ตรงไหน
 - ตอน deploy สำเร็จ เขาตรวจว่า "ใช้ได้จริง" ยังไง
@@ -86,7 +86,7 @@
   - แต่ละ class แยกกันด้วย feature อะไร?
   - มี edge case อะไรที่อาจทำให้สับสน?
   - เก็บกี่ตัวอย่าง/class? ทำไม?
-- ขอ TA review ก่อนเริ่มเก็บข้อมูลจริง
+- ให้เพื่อนอีกคนหรือ TA ช่วยเช็กก่อนเริ่มเก็บข้อมูลจริง
 
 ⚠️ **อย่าเพิ่งเก็บข้อมูลถ้า class ยังไม่ชัด** — ถ้านิยาม class ซ้อนกันตั้งแต่ต้น ทีมจะเสียเวลาตอน train และ debug มาก
 
@@ -96,7 +96,7 @@
 
 **สิ่งที่ต้องทำ:**
 - เริ่ม Edge Impulse Studio → New Project → ตั้งชื่อ
-- เชื่อม UNO Q กับ Edge Impulse (มี script ใน [`labs/setup/connect-edge-impulse.md`](../labs/setup/connect-edge-impulse.md))
+- เชื่อม UNO Q กับ Edge Impulse (ดูขั้นตอนใน [`labs/setup/connect-edge-impulse.md`](../labs/setup/connect-edge-impulse.md))
 - เก็บข้อมูลตามเป้าหมาย:
   - **Track A (Motion):** 50 samples × class, แต่ละ sample 2 วินาที
   - **Track B (Vision):** 100 images × class
@@ -132,7 +132,7 @@
    - ตั้ง model size = **nano (2.4M)** เพื่อให้ลง UNO Q ได้
    - Training processor = **GPU**
    - กด Save & Train
-3. **อ่าน Confusion Matrix** (สอนรวมห้อง 10 นาที)
+3. **อ่าน Confusion Matrix** (ใช้ 10 นาทีทำความเข้าใจทั้งห้อง)
    - True Positive / False Positive
    - Accuracy ที่ดูได้ vs ที่ใช้ได้จริง
 4. **Deploy**
@@ -152,7 +152,7 @@
 - ทดสอบขั้นต่ำ **10 cases** แยก:
   - 5 cases ที่คาดว่าโมเดลจะทำได้
   - 5 cases ที่ท้าทาย (edge case)
-- บันทึก: timestamp, input description, predicted class, confidence, actual class, ถูก/ผิด
+- บันทึก: timestamp, คำอธิบาย input, predicted class, confidence, actual class, ถูก/ผิด
 
 **Part B — Iterate V2 (50 นาที):**
 - วิเคราะห์ Prediction Log
@@ -179,18 +179,18 @@
 
 ### ⏰ 16:00–16:30 | Wrap Up + Idea Canvas
 
-ช่วงนี้ควรสรุปว่า prototype ของทีมจะต่อยอดเป็นอะไรใน Day 2 ได้บ้าง เช่น:
+ช่วงนี้ควรสรุปว่า prototype ของทีมจะต่อยอดเป็นอะไรต่อได้บ้าง เช่น:
 - **เกษตร:** ตรวจโรคพืชจากใบ (Vision)
 - **สุขภาพ:** Fall detector สำหรับผู้สูงอายุ (Motion)
 - **อุตสาหกรรม:** ตรวจเครื่องจักรเสียจากเสียง (Audio)
 
-จากนั้นร่าง Idea Canvas สำหรับ Day 2 แล้ว commit Worksheet W4
+จากนั้นร่าง Idea Canvas สำหรับรอบถัดไป แล้ว commit Worksheet W4
 
 ---
 
 ### ⏰ 16:30–17:00 | Maker Space + Token Strategy
 
-ถ้าทีมจะต่อยอดใน Day 2 ช่วงนี้คือเวลาคิดว่าจะต้องใช้อุปกรณ์อะไรเพิ่ม และเพราะอะไร
+ถ้าทีมจะต่อยอดต่อ ช่วงนี้คือเวลาคิดว่าจะต้องใช้อุปกรณ์อะไรเพิ่ม และเพราะอะไร
 
 ---
 

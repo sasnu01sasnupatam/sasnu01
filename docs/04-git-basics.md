@@ -68,13 +68,13 @@ git config --global user.email "your@email.com"
 
 ### Step 4: สร้าง repo ทีมจาก Team Repo Template
 
-1. ไปที่ repo ของ workshop (ลิงก์จากครู)
+1. ไปที่ repo ของ workshop (ลิงก์ที่ทีมใช้อยู่)
 2. เปิดโฟลเดอร์ `templates/team-repo-template/`
 3. สร้าง repo ใหม่ใน account ของทีมชื่อ `edge-ai-team-XX` (XX = เลขทีม)
 4. คัดลอกไฟล์จาก template ไปใส่ repo ทีม
 5. ตั้ง repo เป็น **Public** เพื่อให้เพื่อนร่วมทีมและ TA เห็นความคืบหน้าได้
 
-ถ้าครูมี template repo แยกต่างหากอยู่แล้ว ให้ใช้ repo นั้นแทนโฟลเดอร์ template ใน workshop repo นี้
+ถ้ามี template repo แยกต่างหากอยู่แล้ว ให้ใช้ repo นั้นแทนโฟลเดอร์ template ใน workshop repo นี้
 
 ### Step 5: Clone ลง laptop
 
@@ -172,7 +172,7 @@ git push -u origin feat/add-fall-class
 
 แล้วบน GitHub:
 1. กด **Compare & pull request**
-2. เพิ่ม description
+2. เพิ่มคำอธิบายสั้น ๆ
 3. กด **Create pull request**
 4. ให้เพื่อนในทีม review + approve
 5. Merge

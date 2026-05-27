@@ -11,7 +11,7 @@
 
 ---
 
-## 🎬 Anchor Demo (ตัวอย่างเปิด workshop)
+## 🎬 Anchor Demo (ตัวอย่างเปิด)
 
 ### 🪄 Gesture Wand — Motion Classification
 
@@ -19,7 +19,7 @@
 - **Sensor:** Modulino Movement
 - **Classes:** วงกลม / Z-shape / สั่น / นิ่ง
 
-นี่คือตัวอย่างเปิด workshop ที่ช่วยให้ทีมเห็นภาพปลายทางก่อนเริ่มลงมือจริง แล้วค่อยนำแนวคิดไปต่อยอดใน track ของตัวเอง
+นี่คือตัวอย่างเปิดที่ช่วยให้ทีมเห็นภาพปลายทางก่อนเริ่มลงมือจริง แล้วค่อยนำแนวคิดไปต่อยอดใน track ของตัวเอง
 
 ---
 
@@ -37,12 +37,12 @@
 **Output:** Modulino Pixels (สีตามคลาส) + Buzzer (alert)
 
 **จุดเด่น:**
-- ✅ เก็บข้อมูลเร็ว (10 วินาที/sample)
+- ✅ เก็บข้อมูลเร็ว (2 วินาที/sample)
 - ✅ Train เร็ว เห็นผลทันที
 - ✅ ไม่ต้องใช้ Webcam
 - ✅ เหมาะกับทีมมือใหม่
 
-**โจทย์ Real World ต่อยอด Day 2:**
+**ไอเดียต่อยอดใช้งานจริง:**
 - Fall detector สำหรับผู้สูงอายุ
 - Fitness rep counter
 - Vibration anomaly detection สำหรับเครื่องจักร
@@ -63,7 +63,7 @@
 **Output:** Modulino Pixels + LED Matrix + Buzzer
 
 **จุดเด่น:**
-- ✅ เห็นผลชัดเจน นักเรียนตื่นเต้น
+- ✅ เห็นผลชัดเจน
 - ✅ Real-world applications เยอะ
 - ✅ เชื่อม Computer Vision concepts
 
@@ -73,7 +73,7 @@
 - ⚠️ ต้องตั้ง model size = **nano**
 - ⚠️ ระวัง bias จาก background, แสง
 
-**โจทย์ Real World ต่อยอด Day 2:**
+**ไอเดียต่อยอดใช้งานจริง:**
 - Smart Recycle Bin (เปิดฝาตามประเภทขยะ)
 - ตรวจโรคพืชจากใบ
 - Quality control ในโรงงาน
@@ -102,7 +102,7 @@
 - ⚠️ Class boundary อาจไม่ชัด → ต้องออกแบบ classes ดีๆ
 - ⚠️ ต้องเก็บข้อมูลในหลายสภาพแวดล้อม
 
-**โจทย์ Real World ต่อยอด Day 2:**
+**ไอเดียต่อยอดใช้งานจริง:**
 - Smart classroom monitor
 - ตู้เย็นในร้านสะดวกซื้อ (alarm ถ้าเปิดทิ้ง)
 - Smart parking (มีรถจอด/ว่าง)
@@ -129,10 +129,10 @@
 
 **ข้อควรระวัง:**
 - ⚠️ ต้อง USB mic (เช็คก่อนว่ามีพอ)
-- ⚠️ ระวัง noise ในห้อง workshop
+- ⚠️ ระวัง noise ในห้องที่ใช้งานจริง
 - ⚠️ ต้อง record ใน environment ที่ใกล้กับ deployment
 
-**โจทย์ Real World ต่อยอด Day 2:**
+**ไอเดียต่อยอดใช้งานจริง:**
 - ระบบตรวจอาการป่วยจากเสียงไอ
 - Smart speaker / voice command
 - ตรวจเครื่องจักรผิดปกติจากเสียง
@@ -153,7 +153,7 @@
 
 แล้วระดับล่ะ?
 ├─ ไม่เคยทำ ML → Basic
-├─ พอเข้าใจ概念 → Intermediate
+├─ พอเข้าใจแนวคิด → Intermediate
 └─ เคย train โมเดลแล้ว → Advanced
 ```
 

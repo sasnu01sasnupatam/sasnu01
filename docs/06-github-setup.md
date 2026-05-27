@@ -1,185 +1,90 @@
 <!-- workshop-header -->
 <img width="1347" height="127" alt="Coding Thailand 2026 header" src="https://github.com/user-attachments/assets/ba5cf267-f460-4fb0-b69b-c461ae061a3b" />
 
-# 🚀 GitHub Setup Guide
+# 🚀 GitHub Team Repo Setup
 
-> คู่มือนี้ใช้อ้างอิง flow ปัจจุบันของ repo นี้: เก็บ team template ไว้ในโฟลเดอร์ `templates/team-repo-template/`
+> ใช้ไฟล์นี้ตอนสร้าง repo ของทีมจาก `templates/team-repo-template/`
 
 ---
 
-## Step 1: สร้าง Repo บน GitHub
-
-### Option A: สร้างใหม่จาก scratch
+## Step 1: สร้าง repo ของทีมบน GitHub
 
 1. ไป https://github.com/new
-2. **Repository name:** `coding-thailand-edge-ai-workshop`
-3. **Description:** "Day 1 materials — Coding Thailand 2026 Edge AI Workshop"
-4. **Public** ✓
-5. **Initialize:** ☐ ไม่ต้องติ๊ก (เราจะ push เอง)
+2. **Repository name:** `edge-ai-team-XX`
+3. **คำอธิบาย repo:** `Edge AI workshop team repo — [ชื่อทีม]`
+4. เลือก **Public**
+5. ยังไม่ต้องติ๊กสร้าง README หรือ `.gitignore` ใหม่
 6. กด **Create repository**
 
-### Option B: ใช้ repo ที่มีอยู่แล้วเป็นฐาน
-
-ถ้ามี workshop repo อยู่แล้ว ให้ push เพิ่มเติมจากเครื่องที่ใช้อยู่เข้า repo เดิมได้เลย
+ถ้าทีมยังไม่มีชื่อ ให้ใช้เลขทีมไปก่อน แล้วค่อยกลับมาแก้ทีหลังได้
 
 ---
 
-## Step 2: Push Repo จากเครื่องที่ใช้อยู่
+## Step 2: คัดลอก Team Template ลง repo
+
+1. เปิดโฟลเดอร์ `templates/team-repo-template/` ใน workshop repo
+2. คัดลอกไฟล์ทั้งหมดไปใส่ repo ของทีม
+3. เปิด `README.md` ของทีมแล้วเปลี่ยน placeholder ให้เป็นชื่อทีม, track, และโจทย์ของตัวเอง
+
+ไฟล์ที่ควรแก้ทันทีมีอย่างน้อย:
+
+- `README.md`
+- `docs/track-selection.md`
+- `worksheets/W1-class-design.md`
+
+---
+
+## Step 3: Clone ลงเครื่องและ commit แรก
 
 ```bash
-# เข้า folder
-cd coding-thailand-edge-ai-workshop
+git clone https://github.com/your-team/edge-ai-team-XX.git
+cd edge-ai-team-XX
 
-# Init git
-git init
 git add .
-git commit -m "init: Edge AI Workshop Day 1 materials"
+git commit -m "init: เริ่ม repo ทีมและใส่ template"
+git push -u origin main
+```
 
-# เชื่อม remote
+ถ้า `main` ยังไม่มี ให้สร้างก่อน push:
+
+```bash
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/coding-thailand-edge-ai-workshop.git
-
-# Push
 git push -u origin main
 ```
 
 ---
 
-## Step 3: เลือกวิธีแจก Team Template
+## Step 4: ชวนเพื่อนในทีมและตั้ง workflow ให้ตรงกัน
 
-### วิธีที่ใช้ได้ทันทีใน repo นี้
+### เพิ่มเพื่อนเข้า repo
 
-ให้นักเรียนสร้าง repo ใหม่ของทีม แล้วคัดลอกไฟล์จาก `templates/team-repo-template/` ไปใส่ repo ของตัวเอง
+1. GitHub repo → **Settings** → **Collaborators**
+2. เชิญเพื่อนในทีมทุกคนเข้า repo
+3. ให้ทุกคน clone repo ลงเครื่องตัวเอง
 
-ข้อดี:
-- ใช้ได้ทันที ไม่ต้องแยก repo ใหม่
-- โครงสร้างทีมอยู่ใน repo เดียวกับ workshop materials
+### เลือกวิธีทำงานร่วมกัน
 
-### ถ้าอยากได้ปุ่ม "Use this template" จริง
+มี 2 แบบที่ใช้ได้:
 
-แยก `templates/team-repo-template/` ออกเป็น repo ใหม่ แล้วค่อยตั้ง repo นั้นเป็น GitHub template repository:
+- แบบเร็ว: commit ลง `main` โดยดึงงานล่าสุดก่อนทุกครั้ง
+- แบบแยกงาน: สร้าง branch แล้วเปิด Pull Request ก่อน merge
 
-1. สร้าง repo ใหม่สำหรับ template ทีมโดยเฉพาะ
-2. copy ไฟล์จาก `templates/team-repo-template/` ไปใส่
-3. ใน GitHub → repo นั้น → **Settings**
-4. หน้า General → ติ๊ก ☑ **Template repository**
-5. Save
-
-วิธีนี้เหมาะถ้าจะใช้ workshop นี้หลายรอบและอยากให้ onboarding เร็วขึ้น
+ถ้าทีมเพิ่งเริ่ม Git ให้ใช้แบบเร็ว แต่ยังควรเขียน commit message ให้ชัด
 
 ---
 
-## Step 4: ตั้ง Branch Protection (Optional)
+## Step 5: จังหวะ commit ที่ควรมี
 
-ป้องกัน main branch ถูกแก้ตรงๆ:
+ไม่ต้องรอให้เสร็จทั้งวันค่อย push ควรมีหลักฐานเป็นช่วง ๆ เช่น:
 
-1. Settings → Branches → Add rule
-2. Branch name: `main`
-3. ☑ Require pull request before merging
-4. ☑ Require approvals: 1
-5. Save
+- หลังเลือก track และกรอก W1
+- หลังเก็บข้อมูลชุดแรก
+- หลัง train V1
+- หลังบันทึก Prediction Log
+- หลังเปรียบเทียบ V1 กับ V2
 
-> ⚠️ สำหรับ workshop ไม่บังคับ — แต่ดีถ้าอยากสอน PR workflow เต็มรูปแบบ
+ตัวอย่าง tag ปิดรอบท้ายวัน:
 
----
-
-## Step 5: เปิด GitHub Discussions (แนะนำ)
-
-ให้นักเรียนถาม-ตอบกันได้:
-
-1. Settings → General → Features
-2. ☑ Discussions
-3. Save
-
----
-
-## Step 6: เตรียม URL ให้ทีม
-
-ก่อนวัน workshop ส่งให้นักเรียนรู้ล่วงหน้า:
-
-```
-🔗 Workshop Repo:
-https://github.com/YOUR_USERNAME/coding-thailand-edge-ai-workshop
-
-📋 Team Repo Template:
-ใน workshop ทีมจะเปิดโฟลเดอร์ templates/team-repo-template/
-แล้วสร้าง repo ของตัวเองชื่อ edge-ai-team-XX (เช่น edge-ai-team-01)
-```
-
----
-
-## Step 7: Sample Team Repo (Optional แต่แนะนำ)
-
-สร้าง demo team repo เป็นตัวอย่าง:
-
-```bash
-# สร้าง repo ว่างก่อน
-gh repo create demo-team --public --clone
-
-# จากนั้น copy ไฟล์ใน templates/team-repo-template ไปใส่ demo-team
-```
-
-แล้วทำ:
-- Commit ตัวอย่าง 3-5 ครั้ง (แสดง commit message format ที่ดี)
-- กรอก Worksheet W1-W4 ตัวอย่าง
-- ใส่ผลลัพธ์สมมุติ V1 vs V2
-
-→ นักเรียนเห็นเป็น reference ได้ทันที
-
----
-
-## Step 8: Pre-Workshop Checklist
-
-ก่อนถึงวัน Workshop:
-
-- [ ] Repo ขึ้น GitHub แล้ว
-- [ ] ตกลงแล้วว่าจะใช้ subfolder template หรือ template repo แยก
-- [ ] Discussions เปิด ☑
-- [ ] URL ส่งให้ทีมแล้ว
-- [ ] Demo team repo มีตัวอย่าง
-- [ ] ทุก TA clone repo ลงเครื่อง
-- [ ] ทดสอบ flow: เปิด team-repo-template → สร้าง repo ทีมใหม่ → push commit แรกได้
-
----
-
-## ⚙️ Optional: GitHub Classroom
-
-ถ้าสะดวกใช้ GitHub Classroom (เหมาะกับ workshop ใหญ่ >20 ทีม):
-
-1. ไป https://classroom.github.com
-2. Create organization → Create classroom
-3. Create assignment → ใช้ repo template
-4. ได้ลิงก์ assignment สำหรับนักเรียน
-5. นักเรียนกดลิงก์ → ระบบสร้าง repo ของแต่ละทีมอัตโนมัติ
-
-**ข้อดี:** จัดการได้ดี + เห็น progress ของทุกทีมในที่เดียว
-**ข้อเสีย:** ต้องตั้ง org ก่อน + นักเรียนต้องอยู่ใน account ที่ join classroom
-
----
-
-## 📋 Workshop Day Flow (GitHub-focused)
-
-### 09:30-09:45 — Setup ทีม
-
-ลำดับที่ควรพาทีมทำ:
-
-- ไปที่ URL workshop repo
-- เปิดโฟลเดอร์ `templates/team-repo-template`
-- สร้าง repo ใหม่ชื่อ `edge-ai-team-XX` แบบ public
-- คัดลอกไฟล์ template ไปใส่ repo ทีม
-- Clone ลง laptop ตามคำสั่งใน `docs/04-git-basics.md`
-
-### ตลอดวัน — Cadence ของ Commit
-
-แนะนำให้ครูตั้ง "Commit Time" ทุก ~30 นาที:
-- 11:00 — Commit Worksheet W1
-- 11:30 — Commit Data Collection log
-- 13:30 — Commit V1 results
-- 14:30 — Commit Prediction Log
-- 15:30 — Commit V2 + comparison
-
-### 16:30 — Final push
-ทุกทีมต้อง final push ก่อนเลิก พร้อม tag `day1-final`:
 ```bash
 git tag day1-final
 git push origin day1-final
@@ -187,34 +92,43 @@ git push origin day1-final
 
 ---
 
-## 🎯 Tips จาก Workshop ก่อนๆ
+## ✅ เช็กว่าพร้อมใช้งานแล้ว
 
-1. **Username convention:** บอกนักเรียนตั้งชื่อ team-repo ให้ match กับ team number เพื่อง่ายต่อการ grade
-2. **TA Watch List:** ให้ TA แต่ละคน Watch repo ของทีมที่ดูแล จะได้รู้เมื่อมี commit ใหม่
-3. **Grading Day:** ใช้ `git log` + `gh pr list` + เปิด repo ดู → ใช้ Rubric ที่อยู่ใน `docs/03-rubric.md`
-4. **Public vs Private:** Public ดีกว่า เพราะทีมเห็นของกันและกัน → เป็นแรงผลักดัน
+- [ ] repo ทีมถูกสร้างบน GitHub แล้ว
+- [ ] ทุกคนในทีมเข้า repo ได้
+- [ ] commit แรกขึ้น GitHub แล้ว
+- [ ] `README.md` ของทีมถูกแก้ placeholder แล้ว
+- [ ] `docs/track-selection.md` และ `worksheets/W1-class-design.md` เริ่มกรอกแล้ว
 
 ---
 
-## 🆘 ปัญหาที่อาจเจอ
-
-### นักเรียนไม่มี GitHub account
-→ เตรียม instruction sign up ล่วงหน้า + เผื่อ 15 นาทีใน schedule
+## 🆘 ปัญหาที่พบบ่อย
 
 ### Push ไม่ขึ้น (HTTPS)
-→ GitHub ตอนนี้ต้องใช้ Personal Access Token แทน password
-→ แนะนำให้ใช้ GitHub CLI: `gh auth login`
 
-### นักเรียนเผลอ commit dataset ใหญ่
-→ มี .gitignore ใน team template แล้ว แต่ย้ำตอน Git 101
+GitHub ตอนนี้ไม่ใช้ password แบบเดิมแล้ว ถ้าถูกถามเรื่อง auth ให้ใช้ GitHub CLI:
 
-### ทีม merge conflict
-→ มีใน troubleshooting guide แล้ว
+```bash
+gh auth login
+```
+
+### เผลอ commit ไฟล์ใหญ่
+
+ให้เอาไฟล์นั้นออกจาก git แล้วปล่อยให้ dataset อยู่ที่ Edge Impulse แทน
+
+```bash
+git rm --cached path/to/big-file.zip
+git commit -m "fix: เอาไฟล์ใหญ่ออกจาก repo"
+git push
+```
+
+### มี merge conflict
+
+กลับไปดู [05-troubleshooting.md](05-troubleshooting.md) แล้วแก้ทีละไฟล์ อย่ารีบกดทับทั้งก้อน
 
 ---
 
 ## 📚 References
 
-- [GitHub Docs - Template Repos](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
-- [GitHub Classroom](https://classroom.github.com)
+- [GitHub Docs - Collaborators](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/inviting-collaborators-to-a-personal-repository)
 - [GitHub CLI](https://cli.github.com/)
