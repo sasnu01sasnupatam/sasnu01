@@ -232,7 +232,7 @@ if (class == "ล้ม") {
 
 ---
 
-## 🚀 Day 2 Prototype Ideas
+## 🚀 ไอเดียต่อยอด
 
 ต่อยอดเป็น prototype จริงได้หลายแบบ:
 

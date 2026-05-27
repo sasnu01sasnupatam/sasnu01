@@ -237,7 +237,7 @@ if (class == "ขวด") {
 
 ---
 
-## 🚀 Day 2 Prototype Ideas
+## 🚀 ไอเดียต่อยอด
 
 1. **Smart Recycle Bin** — เพิ่ม servo เปิดฝาตามประเภท
 2. **Plant Disease Detector** — กล้องส่องใบ → ตรวจโรค

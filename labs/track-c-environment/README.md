@@ -127,7 +127,7 @@ int distance = distance.getDistance();
    Processor:       GPU
    ```
 
-💡 **Tip:** Multi-sensor data มักต้องการ epochs เยอะกว่า (50 vs 30)
+💡 **หมายเหตุ:** Multi-sensor data มักต้องการ epochs เยอะกว่า (50 vs 30)
 
 เป้าหมายของ V1 คือเห็นว่าข้อมูลจากหลาย sensor ช่วยแยก class ได้จริง ไม่ใช่ใส่ sensor เยอะไว้ก่อนโดยไม่รู้ว่าตัวไหนมีประโยชน์
 
@@ -183,7 +183,7 @@ Multi-sensor มักมี "weight" ที่ต่างกัน:
 2. หรือ add sensor ใหม่ที่ track ไม่ได้คิดถึง
 3. เปรียบเทียบ V1 vs V2
 
-ยิ่งทีมอธิบายได้ชัดว่า sensor ไหนช่วยจริง V2 ของทีมจะยิ่งน่าเชื่อถือเวลา demo
+ยิ่งทีมอธิบายได้ชัดว่า sensor ไหนช่วยจริง V2 ของทีมจะยิ่งน่าเชื่อถือเวลาทดสอบและอธิบายผล
 
 ---
 
@@ -199,13 +199,13 @@ if (class == "ปิด") {
 } else if (class == "เปิดทิ้ง") {
   setPixels(255, 0, 0);   // Red — Alert
   buzzer.tone(2000, 500);
-  // ส่ง notification (Day 2)
+   // ส่ง notification เพิ่มภายหลังได้
 }
 ```
 
 ---
 
-## 🚀 Day 2 Prototype Ideas
+## 🚀 ไอเดียต่อยอด
 
 1. **Smart Classroom Monitor** — ตรวจว่าห้องว่างไหม → ปิดแอร์/ไฟอัตโนมัติ
 2. **Fridge Guardian** — alert ถ้าเปิดทิ้ง 30s+ (ประหยัดไฟ)
