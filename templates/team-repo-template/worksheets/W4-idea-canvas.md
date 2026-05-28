@@ -11,7 +11,7 @@
 ## ข้อมูลทีม
 
 - **ชื่อทีม:** _________________
-- **ชื่อ Prototype (working title):** _________________
+- **ชื่อ Prototype (ชื่อเรียกชั่วคราว):** _________________
 
 ---
 
@@ -151,7 +151,7 @@
 |---|---|---|
 | | Hacker | Train V3 + Code integration |
 | | Hipster | Form factor + UI/Output design |
-| | Hustler | Documentation + Pitch deck + Idea validation |
+| | Hustler | เอกสาร + ลำดับการเล่า + ตรวจโจทย์กับผู้ใช้ |
 
 ---
 

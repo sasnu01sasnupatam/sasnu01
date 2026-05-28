@@ -352,7 +352,7 @@ UNO Q → Movement → Pixels → Buzzer
 
 → เขียนใน worksheets/W1-class-design.md
 → Commit + Push
-→ ให้ TA approve ก่อนเก็บจริง
+→ ให้เพื่อนอีกคนหรือทีม support ช่วยเช็กก่อนเก็บจริง
 ```
 
 ---
