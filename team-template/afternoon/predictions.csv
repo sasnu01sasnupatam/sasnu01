@@ -1,0 +1,11 @@
+case,type,input_description,predicted_class,confidence,actual_class,correct,note
+1,normal,(เช่น ทำท่าตามที่ train),,,,,
+2,normal,,,,,,
+3,normal,,,,,,
+4,normal,,,,,,
+5,normal,,,,,,
+6,boundary,(ก้ำกึ่งระหว่าง 2 class),,,,,
+7,boundary,,,,,,
+8,variation,(เร็ว/ช้า/มุม/แสงผิดปกติ),,,,,
+9,unseen,(คนหรือของที่ไม่ได้เก็บ data),,,,,
+10,adversarial,(ใกล้เคียงแต่ไม่ใช่),,,,,
