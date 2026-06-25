@@ -1,0 +1,62 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="28" fill="#F6F1DE"/>
+  <text x="640" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Feature Explorer: good separation vs mixed data</text>
+  <text x="640" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4B5563">Use this view before chasing accuracy. First ask whether the classes already separate in the data.</text>
+
+  <rect x="72" y="152" width="528" height="500" rx="28" fill="#F0FBF2" stroke="#2F9E44" stroke-width="4"/>
+  <rect x="680" y="152" width="528" height="500" rx="28" fill="#FFF4E6" stroke="#F08C00" stroke-width="4"/>
+
+  <rect x="106" y="182" width="192" height="44" rx="22" fill="#2F9E44"/>
+  <text x="202" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Good separation</text>
+
+  <rect x="714" y="182" width="156" height="44" rx="22" fill="#F08C00"/>
+  <text x="792" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Mixed up</text>
+
+  <rect x="110" y="254" width="452" height="280" rx="24" fill="#0F172A"/>
+  <line x1="162" y1="494" x2="520" y2="494" stroke="#334155" stroke-width="2"/>
+  <line x1="162" y1="494" x2="162" y2="288" stroke="#334155" stroke-width="2"/>
+
+  <circle cx="242" cy="420" r="11" fill="#2F9E44"/>
+  <circle cx="274" cy="446" r="11" fill="#2F9E44"/>
+  <circle cx="306" cy="412" r="11" fill="#2F9E44"/>
+  <circle cx="332" cy="454" r="11" fill="#2F9E44"/>
+  <circle cx="284" cy="388" r="11" fill="#2F9E44"/>
+  <circle cx="252" cy="462" r="11" fill="#2F9E44"/>
+
+  <circle cx="430" cy="340" r="11" fill="#F76707"/>
+  <circle cx="462" cy="314" r="11" fill="#F76707"/>
+  <circle cx="494" cy="348" r="11" fill="#F76707"/>
+  <circle cx="522" cy="302" r="11" fill="#F76707"/>
+  <circle cx="476" cy="372" r="11" fill="#F76707"/>
+  <circle cx="444" cy="288" r="11" fill="#F76707"/>
+
+  <text x="240" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1B4332">classes split into clear groups</text>
+  <text x="240" y="594" font-family="Arial, sans-serif" font-size="20" fill="#334155">train is usually easier</text>
+
+  <rect x="718" y="254" width="452" height="280" rx="24" fill="#0F172A"/>
+  <line x1="770" y1="494" x2="1128" y2="494" stroke="#334155" stroke-width="2"/>
+  <line x1="770" y1="494" x2="770" y2="288" stroke="#334155" stroke-width="2"/>
+
+  <circle cx="846" cy="424" r="11" fill="#2F9E44"/>
+  <circle cx="882" cy="402" r="11" fill="#2F9E44"/>
+  <circle cx="928" cy="370" r="11" fill="#2F9E44"/>
+  <circle cx="962" cy="416" r="11" fill="#2F9E44"/>
+  <circle cx="1012" cy="388" r="11" fill="#2F9E44"/>
+  <circle cx="1050" cy="430" r="11" fill="#2F9E44"/>
+
+  <circle cx="864" cy="374" r="11" fill="#F76707"/>
+  <circle cx="912" cy="432" r="11" fill="#F76707"/>
+  <circle cx="950" cy="392" r="11" fill="#F76707"/>
+  <circle cx="986" cy="354" r="11" fill="#F76707"/>
+  <circle cx="1036" cy="406" r="11" fill="#F76707"/>
+  <circle cx="1076" cy="370" r="11" fill="#F76707"/>
+
+  <text x="850" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#9A3412">classes still overlap</text>
+  <text x="850" y="594" font-family="Arial, sans-serif" font-size="20" fill="#334155">go fix data, class definition, or bias first</text>
+
+  <rect x="204" y="618" width="264" height="20" rx="10" fill="#2F9E44" fill-opacity="0.18"/>
+  <circle cx="222" cy="628" r="7" fill="#2F9E44"/>
+  <text x="240" y="634" font-family="Arial, sans-serif" font-size="18" fill="#334155">class A</text>
+  <circle cx="338" cy="628" r="7" fill="#F76707"/>
+  <text x="356" y="634" font-family="Arial, sans-serif" font-size="18" fill="#334155">class B</text>
+</svg>

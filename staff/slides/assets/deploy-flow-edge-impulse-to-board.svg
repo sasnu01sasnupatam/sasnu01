@@ -1,0 +1,48 @@
+<svg width="1280" height="560" viewBox="0 0 1280 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="560" rx="28" fill="#F6F1DE"/>
+  <text x="640" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Deploy flow: Edge Impulse to Arduino UNO Q</text>
+  <text x="640" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#4B5563">Remember the handoff: build in Studio, import in App Lab, then run on the board.</text>
+
+  <rect x="74" y="172" width="250" height="232" rx="28" fill="#132742" stroke="#3B82F6" stroke-width="4"/>
+  <rect x="366" y="172" width="180" height="232" rx="28" fill="#FFF8E8" stroke="#F59E0B" stroke-width="4"/>
+  <rect x="588" y="172" width="250" height="232" rx="28" fill="#132742" stroke="#94D82D" stroke-width="4"/>
+  <rect x="880" y="172" width="326" height="232" rx="28" fill="#132742" stroke="#F97316" stroke-width="4"/>
+
+  <text x="199" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#DBEAFE">Edge Impulse</text>
+  <text x="199" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#BFDBFE">Deployment</text>
+  <text x="199" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">1. choose Arduino UNO Q</text>
+  <text x="199" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">2. Build</text>
+  <text x="199" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">3. Download</text>
+
+  <text x="456" y="232" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#92400E">Model file</text>
+  <rect x="406" y="270" width="100" height="100" rx="20" fill="#FFFFFF" stroke="#F59E0B" stroke-width="3"/>
+  <path d="M438 294H474L492 312V346C492 354 486 360 478 360H438C430 360 424 354 424 346V308C424 300 430 294 438 294Z" fill="#FFF7ED" stroke="#F59E0B" stroke-width="3"/>
+  <path d="M474 294V316H496" stroke="#F59E0B" stroke-width="3"/>
+  <text x="456" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#7C2D12">downloaded from Studio</text>
+
+  <text x="713" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#D9F99D">Arduino App Lab</text>
+  <text x="713" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ECFCCB">Import and send</text>
+  <text x="713" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">4. import model</text>
+  <text x="713" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">5. select board</text>
+  <text x="713" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">6. run on board</text>
+
+  <text x="1043" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FED7AA">Arduino UNO Q</text>
+  <text x="1043" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFEDD5">Live inference</text>
+  <text x="1043" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">reads sensor</text>
+  <text x="1043" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">predicts class</text>
+  <text x="1043" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF">lights / sound / output</text>
+
+  <path d="M324 288H366" stroke="#111827" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+  <path d="M546 288H588" stroke="#111827" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+  <path d="M838 288H880" stroke="#111827" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+
+  <rect x="442" y="436" width="396" height="62" rx="18" fill="#111827"/>
+  <text x="640" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Quick memory</text>
+  <text x="640" y="488" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#D1D5DB">Build in Edge Impulse. Import in App Lab. Test on the real board.</text>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14V0Z" fill="#111827"/>
+    </marker>
+  </defs>
+</svg>

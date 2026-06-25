@@ -1,0 +1,71 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" fill="#F8F5EC"/>
+  <rect x="40" y="36" width="1200" height="688" rx="28" fill="#FFFDF8" stroke="#1B1B1B" stroke-width="4"/>
+  <text x="640" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#1B1B1B">Bias example: shortcut vs real pattern</text>
+  <text x="640" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#444444">If class A and class B always come with different light, people, or backgrounds, the model can memorize the wrong clue.</text>
+
+  <rect x="84" y="170" width="514" height="494" rx="26" fill="#FFF4E8" stroke="#E07A2F" stroke-width="4"/>
+  <rect x="680" y="170" width="514" height="494" rx="26" fill="#EDF8EF" stroke="#2C8C4A" stroke-width="4"/>
+
+  <rect x="110" y="194" width="190" height="46" rx="23" fill="#E07A2F"/>
+  <text x="205" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Wrong collection</text>
+
+  <rect x="706" y="194" width="204" height="46" rx="23" fill="#2C8C4A"/>
+  <text x="808" y="224" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Better collection</text>
+
+  <rect x="112" y="274" width="206" height="150" rx="20" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3"/>
+  <text x="215" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1B1B1B">Class A</text>
+  <circle cx="214" cy="354" r="34" stroke="#1463FF" stroke-width="12" fill="none"/>
+  <circle cx="284" cy="300" r="15" fill="#FFD54F"/>
+  <line x1="284" y1="274" x2="284" y2="256" stroke="#FFD54F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="258" y1="300" x2="240" y2="300" stroke="#FFD54F" stroke-width="4" stroke-linecap="round"/>
+  <line x1="328" y1="300" x2="310" y2="300" stroke="#FFD54F" stroke-width="4" stroke-linecap="round"/>
+  <text x="215" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#555555">bright table</text>
+
+  <rect x="360" y="274" width="206" height="150" rx="20" fill="#2E3137" stroke="#1B1B1B" stroke-width="3"/>
+  <text x="463" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Class B</text>
+  <path d="M425 336H501L437 388H503" stroke="#FFB454" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="533" cy="298" r="14" fill="#CFD6E6"/>
+  <path d="M521 314C529 324 537 324 545 314" stroke="#CFD6E6" stroke-width="4" stroke-linecap="round"/>
+  <text x="463" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#D4D4D4">dark table</text>
+
+  <path d="M196 470C278 470 340 476 395 498" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+  <path d="M458 470C493 478 526 486 562 498" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+  <rect x="220" y="520" width="250" height="96" rx="22" fill="#1B1B1B"/>
+  <text x="345" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Model learns</text>
+  <text x="345" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#FFD54F">light / table / person</text>
+
+  <rect x="708" y="274" width="150" height="128" rx="18" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3"/>
+  <text x="783" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B1B1B">A</text>
+  <circle cx="783" cy="344" r="28" stroke="#1463FF" stroke-width="10" fill="none"/>
+  <text x="783" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555555">bright</text>
+
+  <rect x="882" y="274" width="150" height="128" rx="18" fill="#2E3137" stroke="#1B1B1B" stroke-width="3"/>
+  <text x="957" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">A</text>
+  <circle cx="957" cy="344" r="28" stroke="#66A3FF" stroke-width="10" fill="none"/>
+  <text x="957" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#D4D4D4">dark</text>
+
+  <rect x="708" y="432" width="150" height="128" rx="18" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="3"/>
+  <text x="783" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1B1B1B">B</text>
+  <path d="M752 487H816L766 529H819" stroke="#FF8C42" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="783" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#555555">bright</text>
+
+  <rect x="882" y="432" width="150" height="128" rx="18" fill="#2E3137" stroke="#1B1B1B" stroke-width="3"/>
+  <text x="957" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">B</text>
+  <path d="M926 487H990L940 529H993" stroke="#FFB454" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="957" y="543" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#D4D4D4">dark</text>
+
+  <path d="M1032 338C1087 358 1122 376 1154 410" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+  <path d="M1032 496C1085 492 1128 482 1160 466" stroke="#1B1B1B" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-dark)"/>
+  <rect x="1018" y="534" width="148" height="86" rx="22" fill="#1B1B1B"/>
+  <text x="1092" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">Model learns</text>
+  <text x="1092" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#7FE08B">gesture class</text>
+
+  <text x="808" y="642" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#2C8C4A">Mix people, light, angle, and background for every class</text>
+
+  <defs>
+    <marker id="arrow-dark" markerWidth="14" markerHeight="14" refX="10" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14V0Z" fill="#1B1B1B"/>
+    </marker>
+  </defs>
+</svg>
