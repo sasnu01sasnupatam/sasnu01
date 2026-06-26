@@ -36,8 +36,8 @@ AI Industrial Risk Oracle ช่วยเจ้าหน้าที่ควา
 
 ## 4️⃣ Solution — แก้ด้วยอะไร
 
-- **Input ที่ใช้:** : Modulino Distance, Modulino Movement, Modulino Thermo และ MQ2 Gas Sensor
-- **Class ที่ AI แยก:** : Safe, Warning, Critical
+- **Input ที่ใช้:** Modulino Distance, Modulino Movement, Modulino Thermo และ MQ2 Gas Sensor
+- **Class ที่ AI แยก:** Safe, Warning, Critical
 - **Output ตอบสนอง:** LCD แสดงค่า Risk Score , Modulino Pixels เปลี่ยนสี (เขียว/เหลือง/แดง), Buzzer แจ้งเตือนเมื่อความเสี่ยงสูง 
 
 ---
